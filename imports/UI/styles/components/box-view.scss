@@ -1,0 +1,25 @@
+.box-view {
+  background: $box-view-overlay-bg;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-view_modal {
+  background: fade_out($box-view-overlay-bg,.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box-view__box {
+  background: $box-view-bg;
+  padding: 20px;
+  border-radius: $radius;
+  text-align: center;
+  width: 300px;
+}

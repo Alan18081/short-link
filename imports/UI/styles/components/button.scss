@@ -1,0 +1,44 @@
+.button {
+  background: $button-bg;
+  border: none;
+  color: $button-color;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  font-size: $base-font-size;
+  padding: 10px;
+  border-radius: $radius;
+  margin-bottom: $space;
+  &:hover {
+    background: darken($button-bg,10%);
+  }
+}
+
+.button_link {
+  display: inline-block;
+  text-decoration: none;
+  background: none;
+  font-weight: 500;
+  color: black;
+  &:hover {
+    background: none;
+    text-decoration: underline;
+  }
+}
+
+.button_pill {
+  border: 1px solid $button-bg;
+  color: $button-bg;
+  display: inline-block;
+  background-color: transparent;
+  margin-right: $space;
+  &:hover {
+    color: $button-color;
+    background: $button-bg;
+  }
+}
+
+.button_fluid {
+  width: 100%;
+}
